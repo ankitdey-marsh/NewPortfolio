@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: 'Minecrafter-MA3Dw';
+  src: url('./assets/fonts/Minecrafter-MA3Dw.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0.5) translateY(-50%);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2) translateY(10%);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-bounce-in {
+  animation: bounce-in 0.8s ease-out forwards;
+}
