@@ -1,20 +1,25 @@
 import React from 'react';
 import PumpkinColor from '../assets/images/pumpkinColor.png';
 import Creeper from '../assets/images/creeper.png';
-import StoneColor from '../assets/images/stoneColor.png';
+import PinkwoodColor from '../assets/images/pinkwoodColor.png';
+import DarkoakColor from '../assets/images/darkoakColor.png';
+import SpruceColor from '../assets/images/spruceColor.png';
+
 
 const Frontpage = () => {
   return (
     <div
       className="bg-[#1A120B] h-screen w-screen flex items-center justify-center px-4"
       style={{
-        // backgroundImage: `url(${StoneColor})`,
-        backgroundSize: 'cover',
+        backgroundImage: `url(${SpruceColor})`,
+        backgroundSize: '96px 96px', // or match your texture size exactly
         backgroundRepeat: 'repeat',
-        backgroundPosition: 'center',
-        backgroundColor: '#1f1c1c', // fallback background color
+        backgroundPosition: 'top left',
+        imageRendering: 'pixelated', // Ensures crisp pixels on zoom
+        backgroundColor: '#1f1c1c',
       }}
     >
+
       <div className="flex flex-col items-center relative md:-top-7">
         {/* Top Row: Ankit and i (with Creeper) */}
         <div className="flex flex-wrap justify-center gap-1">
@@ -24,10 +29,10 @@ const Frontpage = () => {
               <div
                 className="font-minecraft text-8xl md:text-9xl text-transparent bg-clip-text leading-none"
                 style={{
-                  backgroundImage: `url(${PumpkinColor})`,
+                  backgroundImage: `url(${PinkwoodColor})`,
                   backgroundSize: 'contain',
                   backgroundPosition: 'center',
-                  filter: 'brightness(0.9)',
+                  filter: 'brightness(1.1)',
                 }}
               >
                 {char}
@@ -43,10 +48,12 @@ const Frontpage = () => {
             <div
               className="font-minecraft text-8xl -ml-2 md:text-9xl text-transparent bg-clip-text leading-none"
               style={{
-                backgroundImage: `url(${PumpkinColor})`,
-                backgroundSize: 'contain',
-                backgroundPosition: 'center',
-                filter: 'brightness(0.9)',
+                backgroundImage: `url(${PinkwoodColor})`,
+                backgroundSize: '64px 64px', // or match your texture size exactly
+                backgroundRepeat: 'repeat',
+                backgroundPosition: 'top left',
+                imageRendering: 'pixelated', // Ensures crisp pixels on zoom
+                filter: 'brightness(1.1)',
               }}
             >
               i
@@ -60,10 +67,10 @@ const Frontpage = () => {
               <div
                 className="font-minecraft text-8xl md:-ml-2 -ml-2.5 md:text-9xl text-transparent bg-clip-text leading-none"
                 style={{
-                  backgroundImage: `url(${PumpkinColor})`,
+                  backgroundImage: `url(${PinkwoodColor})`,
                   backgroundSize: 'contain',
                   backgroundPosition: 'center',
-                  filter: 'brightness(0.9)',
+                  filter: 'brightness(1.1)',
                 }}
               >
                 {char === ' ' ? '\u00A0' : char}
@@ -79,10 +86,10 @@ const Frontpage = () => {
                 <div
                   className="font-minecraft text-9xl text-transparent bg-clip-text leading-none"
                   style={{
-                    backgroundImage: `url(${PumpkinColor})`,
+                    backgroundImage: `url(${PinkwoodColor})`,
                     backgroundSize: 'contain',
                     backgroundPosition: 'center',
-                    filter: 'brightness(0.9)',
+                    filter: 'brightness(1.1)',
                   }}
                 >
                   {char}
@@ -103,7 +110,7 @@ const Frontpage = () => {
                   backgroundImage: `url(${PumpkinColor})`,
                   backgroundSize: 'contain',
                   backgroundPosition: 'center',
-                  filter: 'brightness(0.9)',
+                  filter: 'brightness(1.1)',
                 }}
               >
                 {char}

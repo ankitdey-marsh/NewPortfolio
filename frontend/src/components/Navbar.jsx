@@ -4,6 +4,7 @@ import LinkedIn from '../assets/icons/linkedin.png';
 import Twitter from '../assets/icons/twitter.png';
 import Instagram from '../assets/icons/instagram.png';
 import IceColor from '../assets/images/iceColor.png';
+import LeaveColor from '../assets/images/leaveColor.png';
 
 const Navbar = () => {
   return (
@@ -11,7 +12,7 @@ const Navbar = () => {
       <div
         className="absolute px-6 py-3 -top-32 rounded-xl flex gap-6 items-center transition-transform duration-300 hover:scale-110"
         style={{
-          backgroundImage: `url(${DirtColor})`,
+          backgroundImage: `url(${LeaveColor})`,
           backgroundSize: 'contain',
           backgroundRepeat: 'repeat',
           backgroundPosition: 'center',

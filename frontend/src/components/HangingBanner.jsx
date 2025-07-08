@@ -13,7 +13,7 @@ const HangingBanner = () => {
           href="https://github.com/ankitdey-marsh"
           rel="noopener noreferrer"
           target="_blank"
-          className="absolute left-0 top-20 transition-transform duration-300 hover:scale-110"
+          className="absolute left-0 top-20 transition-transform duration-300 hover:scale-110 border-4 border-yellow-100 rounded-xl shadow-white shadow-sm"
           style={{
             backgroundImage: `url(${WoodColor})`,
             backgroundSize: 'cover',
@@ -23,9 +23,9 @@ const HangingBanner = () => {
             cursor: 'pointer',
           }}
         >
-          <div className="text-center font-minecraft text-4xl px-8 py-4 shadow-lg">
+          <div className="text-center font-minecraft text-4xl px-8 py-4 mt-2 shadow-lg">
             <span
-              className="mx-8 mr-9 inline-block text-transparent bg-clip-text"
+              className="mx-9 mr-9 inline-block text-transparent bg-clip-text"
               style={{
                 backgroundImage: `url(${SandColor})`,
                 backgroundSize: 'cover',
